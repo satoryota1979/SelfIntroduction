@@ -1,0 +1,97 @@
+.title {
+  color: blue;
+}
+
+.br::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3333CC;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.center {
+/*  width: 80%; */
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img{
+  height: 200px;
+}
+
+.name {
+/*  width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  width: 200px;
+  font-size: 20px;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0.5em 1em;
+  margin: 0em 0;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+/* ドラッグアンドドロップ動作用 */
+.drag-and-drop {
+  cursor: move;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+}
+
+.drag {
+  z-index: 1001;
+}
+
+#red-box{
+  top: 300px;
+  left: 0px;
+  background-color: rgb(255, 0, 0);
+}
+
+#blue-box{
+  top: 300px;
+  left: 110px;
+  background-color: rgb(25, 0, 255);
+}
+
+#yellow-box{
+  top: 300px;
+  left: 220px;
+  background-color: rgb(238, 255, 0);
+}
